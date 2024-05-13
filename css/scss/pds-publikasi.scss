@@ -117,7 +117,7 @@
         top: 0;
         z-index: 0;
         background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.2) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,.6) 100%);
     }
 }
 
@@ -142,8 +142,8 @@
 
 .text-clip-img{
     margin:0;
-    font-size: 5.5rem;
-    color: rgba(0,0,0, .65);
+    font-size: 2rem;
+    color: rgba(38,52,68, .65);
     background-image: url("../img/cover-laporan2022.jpg");
     background-repeat: repeat;
     -webkit-background-clip:text;
@@ -166,7 +166,7 @@
     -o-transform: rotate(-90deg);
     writing-mode: lr-tb; 
     position: absolute;
-    color: var(--text-default);
+    color: var(--n900);
     bottom: 0;
     left: 0;
     right: 0;
@@ -620,21 +620,21 @@
 
  @media (min-width: 576px) { 
     .text-clip-img{
-        //font-size: 12rem;
+        font-size: 4rem;
     }
  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .text-clip-img{
-        //font-size: 14rem;
+        font-size: 5.5rem;
     }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .text-clip-img{
-        //font-size: 16rem;
+        font-size: 5.5rem;
     }
     .scroll-top{
         bottom: 24px;
@@ -649,7 +649,7 @@
 
  @media (min-width: 1200px) { 
     .text-clip-img{
-        //font-size: 18.75rem;
+        font-size: 5.5rem;
     }
  }
 
