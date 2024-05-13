@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: Googlebot
+Disallow: /
+
+Sitemap: https://www.publikasi-2023.prakerja.go.id/sitemap.xml
