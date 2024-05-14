@@ -142,20 +142,21 @@
 
 .text-clip-img{
     margin:0;
-    font-size: 2rem;
-    color: rgba(38,52,68, .65);
-    background-image: url("../img/cover-laporan2022.jpg");
-    background-repeat: repeat;
-    -webkit-background-clip:text;
-    background-clip: text;
-    animation: animate 60s ease-in-out infinite;
+    font-size: 4rem;
+    // color: rgba(38,52,68, .65);
+    // background-image: url("../img/cover-laporan2022.jpg");
+    // background-repeat: repeat;
+    // -webkit-background-clip:text;
+    // background-clip: text;
+    // animation: animate 60s ease-in-out infinite;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-
+    text-transform: capitalize;
+    // font-weight: 900;
+    font-family: "Dancing Script", cursive !important;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
-
-
 
 .scroll-hint{
     // outline: solid 1px red;
@@ -191,6 +192,7 @@
 
 /* Section Hero End */
 
+
 // 
 /* Section Statistic Start*/
 .section-statistic{
@@ -199,10 +201,23 @@
     background-repeat: no-repeat;
     background-position: right bottom;
 }
-.ctext-secondary *{
+.ctext-secondary, .ctext-secondary *{
     color: var(--secondary);
 }
 /* Section Statistic End*/
+
+/* section insight */
+.cards-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: box-shadow 1s;
+    transition-timing-function : ease;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: box-shadow 1s;
+        transition-timing-function : ease;
+    }
+}
 
 /* Section Timeline Start*/
 .section-timeline{

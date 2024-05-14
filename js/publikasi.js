@@ -24,25 +24,25 @@ $(window).scroll(function() {
 });
 
 /* form on submit */
-// $('.button.btn-primary').on("click", function(e,f) {
-//     var _this = $(this);
-//     var success = $('.alert-success.align-items-start');
-//     _this.addClass('disabled').val('Mengirim...');
-//     window.setTimeout(function () {
-//         var error = $('div.mce_inline_error');
-//         if (error.length > 0) {
-//             _this.removeClass('disabled').val('Kirim')
-//         }
-//     }, 1000);
+$('.button.btn-primary').on("click", function(e,f) {
+    var _this = $(this);
+    var success = $('.alert-success.align-items-start');
+    _this.addClass('disabled').val('Mengirim...');
+    window.setTimeout(function () {
+        var error = $('div.mce_inline_error');
+        if (error.length > 0) {
+            _this.removeClass('disabled').val('Kirim')
+        }
+    }, 1000);
 
-//     $('#mce-success-response').bind('DOMSubtreeModified', function(e) {
-//         if (e.target.innerHTML.length > 0) {
-//             success.addClass('d-flex');
-//             _this.removeClass('disabled').val('Kirim')
+    $('#mce-success-response').bind('DOMSubtreeModified', function(e) {
+        if (e.target.innerHTML.length > 0) {
+            success.addClass('d-flex');
+            _this.removeClass('disabled').val('Kirim')
 
-//             window.setTimeout(function () {
-//                 success.removeClass('d-flex').hide();
-//             }, 2000);
-//         }
-//     });
-// })
+            window.setTimeout(function () {
+                success.removeClass('d-flex').hide();
+            }, 2000);
+        }
+    });
+})
