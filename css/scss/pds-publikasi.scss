@@ -162,8 +162,14 @@
 //     font-weight: 900;
 //     font-size: 18.75rem;
 //     line-height: 19rem;
-
 // }
+
+.nav.nav-pills {
+    button.nav-link:not(.active) {
+        background: var(--bg-disabled);
+        color : var(--text-default);
+    }
+}
 
 .text-clip-img{
     margin:0;
