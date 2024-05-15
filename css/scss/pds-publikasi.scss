@@ -291,12 +291,16 @@
         }
     }
 
+
 }
 
 .path-item,
 .path-end{
     p{
         color: var(--text-secondary);
+    }
+    img{
+        max-width: calc(20rem + 1.5vw)
     }
 }
 .path-end{
