@@ -98,10 +98,10 @@
     position: relative;
     padding-top: 4rem;
     background-color: var(--b400);
-    background-image: url("../img/bg-sections-nav.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../img/bg-sections-hero-xs.webp");
+    background-repeat: repeat;
     background-position: center center;
-    background-size: cover;
+    // background-size: cover;
     // outline: solid 1px red;
     // background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
 
@@ -517,7 +517,7 @@
 .book-frame{
     padding-left:1rem;
     position: relative;
-    aspect-ratio: 9/6;
+    aspect-ratio: 9/5.6;
     overflow: hidden;
     border-radius: .5rem;
     box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.2), 0px 8px 16px -4px rgba(1, 24, 48, 0.1);
@@ -532,7 +532,7 @@
         content: '';
         width: 1rem;
         height: 100%;
-        background-color: var(--o400);
+        background-color: var(--b700);
         position: absolute;
         top: 0;
         left: 0;
@@ -544,6 +544,10 @@
     color: var(--text-secondary);
 }
 
+// temporary forced color
+.nav-link.active{
+    background-color: #2A72C7 !important;
+}
 
 .btn-primary {
     --bs-btn-color: #fff;
@@ -769,6 +773,12 @@
             padding: 0 1rem!important;
             border-radius: none;
         }
+    }
+    .section-hero{
+        background-image: url("../img/bg-sections-hero.webp");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
  }
 
